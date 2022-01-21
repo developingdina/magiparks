@@ -9,7 +9,7 @@ export default function ListItem(props) {
 
     return (
         <>
-          <h3 key={props.name} onClick={handleClick}style={{border: "2px solid black"}}>{props.name}</h3>
+          <h3 key={props.name} onClick={handleClick}style={{border: "2px dotted black"}}>{props.name}</h3>
         </>
     )
 }
