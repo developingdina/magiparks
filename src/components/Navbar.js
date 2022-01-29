@@ -14,6 +14,9 @@ export default function Navbar(){
             <NavLink to="/home">
                 <Button>Home</Button>
             </NavLink>
+            <NavLink to="/">
+                <Button>Exit</Button>
+            </NavLink>
         </div>
     )
 }
