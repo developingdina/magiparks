@@ -1,16 +1,11 @@
 import React from 'react'
-
-export default function ListItem(props) {
-
-
-    function handleClick(){
-        console.log("Clicked")
-        
-    }
+export default function ListItem({title}) {
 
     return (
-        <>
-          <h3 key={props.name} onClick={handleClick}style={{border: "2px dotted black"}}>{props.name}</h3>
-        </>
+        <div>
+            <h3>{title}</h3>
+            <h4>Temperature</h4>
+            <text>Description</text>
+        </div>
     )
 }
