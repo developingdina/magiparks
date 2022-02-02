@@ -15,15 +15,15 @@ useEffect(()=> {
     })
   }, [])
   
-const p = card.map((park) => {
-    <ListItem key={park.title} title={park.title}/>
-})
+
 
     return (
         <div>
             <h1>Park List</h1>
             <ul>
-                {p}
+                {card.map((obj) => (
+                    <ListItem key={obj.title} title={obj.title} desc={obj.desc}/>
+                ))}
             </ul>
         </div>
     )
