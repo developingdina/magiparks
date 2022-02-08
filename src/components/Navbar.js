@@ -15,6 +15,10 @@ export default function Navbar(){
                 <Button>Home</Button>
             </NavLink>
             
+            <NavLink to="/about">
+                <Button>About</Button>
+            </NavLink>
+            
             <NavLink to="/">
                 <Button>Exit</Button>
             </NavLink>
