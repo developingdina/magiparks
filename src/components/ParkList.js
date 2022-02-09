@@ -19,10 +19,10 @@ useEffect(()=> {
 
     return (
         <div>
-            <h1>Park List</h1>
+            <h1>Other National Parks</h1>
             <ul>
                 {card.map((obj) => (
-                    <ListItem key={obj.title} title={obj.title} desc={obj.desc}/>
+                    <ListItem key={obj.title} title={obj.title} desc={obj.desc} id={obj.id}/>
                 ))}
             </ul>
         </div>
