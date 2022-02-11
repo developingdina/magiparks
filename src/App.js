@@ -6,6 +6,7 @@ import { useState } from 'react';
 import { Routes, Route, NavLink } from 'react-router-dom';
 import Welcome from './components/Welcome';
 import { About } from './components/About';
+import SuggestPark from './components/SuggestPark';
 function App() {
 
 
@@ -19,6 +20,7 @@ function App() {
         <Route path="/parks" element={<ParkList />} />
         <Route path="/about" element={<About />}/>
         <Route path="/home" element={<Home />} />
+        <Route path="/parks/new" element={<SuggestPark/>}/>
         <Route exact path="/" element={<Welcome />}/>
       </Routes>
     </div>

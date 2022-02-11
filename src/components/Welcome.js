@@ -8,7 +8,7 @@ export default function Welcome(){
         <div id="welcome">
             <h1>Welcome Traveler</h1>
              
-      <NavLink to="/home">
+      <NavLink to="/parks">
         <Button>Enter</Button>
       </NavLink>
 

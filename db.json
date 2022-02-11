@@ -1,10 +1,24 @@
 {
-    "parks": [
-        {"id": 1, "title": "The Lost Woods", "desc": 
-            "The Lost Woods is a maze-like area of a confusing forest. Its layout is usually designed to make anyone who enters to become irreversibly lost, and the only way to exit the forest is by navigating it in specific directions. Please do not navigate the forrest without the official navigational directions from the The Office of the Other National Parks"},
-        {"id": 2, "title": "Amity Island National Park", "desc": "Once a fictional island this JAW-dropping island is known for its clean air, beautiful beaches, and many of its local fisherman. The island is also infamous for a series of REDACTED. Come and enjoy the gorgeous scenery: SWIMMING IS NOT RECOMMENDED"},
-        {"id": 3, "title": "Dagobah National Park", "desc": "May the force be with you while you explore this remote world filled with swamps and forests. Once a refuge for Jedi Grand Master Yoda, this national park now serves as a historical site."},
-        {"id": 4, "title": "Tatooine National Park", "desc": ""},
-       { "id": 5, "title": "Mordor Historical Monument", "desc": ""}
-    ]
+  "parks": [
+    {
+      "id": 2,
+      "title": "Amity Island National Park",
+      "desc": "Once a fictional island this JAW-dropping island is known for its clean air, beautiful beaches, and many of its local fisherman. The island is also infamous for a series of REDACTED. Come and enjoy the gorgeous scenery: SWIMMING IS NOT RECOMMENDED"
+    },
+    {
+      "id": 3,
+      "title": "Dagobah National Park",
+      "desc": "May the force be with you while you explore this remote world filled with swamps and forests. Once a refuge for Jedi Grand Master Yoda, this national park now serves as a historical site."
+    },
+    {
+      "id": 4,
+      "title": "Tatooine National Park",
+      "desc": ""
+    },
+    {
+      "id": 5,
+      "title": "Mordor Historical Monument",
+      "desc": ""
+    }
+  ]
 }
