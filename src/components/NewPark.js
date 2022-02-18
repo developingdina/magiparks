@@ -1,18 +1,29 @@
 import React from "react";
 import { useState } from "react";
 
-export default function SuggestPark(){
+export default function NewPark(){
 //function to handle form changes
 //function to handle state changes
 //add state
+const [value, setValue] = useState(" ")
 
+function handleChange(e){
+    setValue(e.target.value)
+}
+
+function handleSubmit(e){
+    e.preventDefault()
+    //add a fetch POST call to send the value to the 
+    //db
+
+}
 
     return(
         <div>
-            <form>
+            <form onSubmit={handleSubmit}>
                 <label>
                     Park Title:<br/>
-                    <input type="text" name="title"/>
+                    <input onChange={handleChange} value={value} type="text" name="title"/>
                 </label><br/>
             
                 <input type="submit" value="submit"/>
