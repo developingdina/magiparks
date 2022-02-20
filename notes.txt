@@ -1,3 +1,7 @@
+This will be an application that gives guidance to otherwordly 
+places that have been established as National Parks:
+
+Parks:
 {
   "parks": [
     {"id": 1, "title": "The Lost Woods", "desc": 
