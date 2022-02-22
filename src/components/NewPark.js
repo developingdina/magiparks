@@ -13,6 +13,15 @@ function handleChange(e){
 
 function handleSubmit(e){
     e.preventDefault()
+    fetch("http://localhost:3000/parks", {
+        method: "POST",
+        headers: {
+            "Content-Type": 'applicaton/json'
+        },
+        body: JSON.stringify(value)
+    })
+    .then((resp) => resp.json())
+    .then((data) => console.log(data))
     //add a fetch POST call to send the value to the 
     //db
 

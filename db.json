@@ -1,7 +1,10 @@
 {
   "parks": [
-    {"id": 1, "title": "The Lost Woods", "desc": 
-      "The Lost Woods is a maze-like area of a confusing forest. Its layout is usually designed to make anyone who enters to become irreversibly lost, and the only way to exit the forest is by navigating it in specific directions. Please do not navigate the forrest without the official navigational directions from the The Office of the Other National Parks"},
+    {
+      "id": 1,
+      "title": "The Lost Woods",
+      "desc": "The Lost Woods is a maze-like area of a confusing forest. Its layout is usually designed to make anyone who enters to become irreversibly lost, and the only way to exit the forest is by navigating it in specific directions. Please do not navigate the forrest without the official navigational directions from the The Office of the Other National Parks"
+    },
     {
       "id": 2,
       "title": "Amity Island National Park",
