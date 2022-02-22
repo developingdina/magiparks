@@ -5,23 +5,22 @@ export default function NewPark(){
 //function to handle form changes
 //function to handle state changes
 //add state
-const [value, setValue] = useState(" ")
+const [title, setTitle] = useState(" ")
 
 function handleChange(e){
-    setValue(e.target.value)
+    setTitle(e.target.value)
 }
 
 function handleSubmit(e){
     e.preventDefault()
     fetch("http://localhost:3000/parks", {
         method: "POST",
-        headers: {
-            "Content-Type": 'applicaton/json'
-        },
-        body: JSON.stringify(value)
-    })
-    .then((resp) => resp.json())
-    .then((data) => console.log(data))
+        headers:  { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+            title: title
+        })
+    }).then((resp) => resp.json())
+    .then(data => console.log(data))
     //add a fetch POST call to send the value to the 
     //db
 
@@ -32,10 +31,10 @@ function handleSubmit(e){
             <form onSubmit={handleSubmit}>
                 <label>
                     Park Title:<br/>
-                    <input onChange={handleChange} value={value} type="text" name="title"/>
+                    <input onChange={handleChange} value={title} type="text"/>
                 </label><br/>
             
-                <input type="submit" value="submit"/>
+                <input type="submit" />
             </form>
         </div>
     )
