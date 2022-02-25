@@ -1,14 +1,20 @@
 import React from "react";
 import { useState } from "react";
 
-export default function NewPark(){
+export default function NewPark(props){
 //function to handle form changes
 //function to handle state changes
 //add state
 const [title, setTitle] = useState(" ")
+const [desc, setDesc] = useState(" ")
 
-function handleChange(e){
+
+function handleTitle(e){
     setTitle(e.target.value)
+}
+
+function handleDesc(e){
+    setDesc(e.target.value)
 }
 
 function handleSubmit(e){
@@ -17,10 +23,12 @@ function handleSubmit(e){
         method: "POST",
         headers:  { 'Content-Type': 'application/json' },
         body: JSON.stringify({
-            title: title
+            title: title,
+            desc: desc
         })
-    }).then((resp) => resp.json())
-    .then(data => console.log(data))
+    }).then(props.refresh)
+   
+
     //add a fetch POST call to send the value to the 
     //db
 
@@ -31,7 +39,10 @@ function handleSubmit(e){
             <form onSubmit={handleSubmit}>
                 <label>
                     Park Title:<br/>
-                    <input onChange={handleChange} value={title} type="text"/>
+                    <input onChange={handleTitle} value={title} type="text" /><br/>
+                    Description:<br/>
+                    <input onChange={handleDesc} value={desc} type="text"/>
+
                 </label><br/>
             
                 <input type="submit" />

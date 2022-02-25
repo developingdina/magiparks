@@ -1,17 +1,13 @@
 import React from 'react'
 import Button from './Button'
-export default function ListItem({title, desc, id, delFunction}) {
+export default function ListItem({title, desc, id, refFunction}) {
 
 
 
  function deletePark(id){
     fetch(`http://localhost:3000/parks/${id}`, {
         method: "DELETE"
-    }).then((resp) => resp.json())
-    .then((data) =>{
-        console.log(data)
-        delFunction(id)
-    })
+    }).then(refFunction())
  }
  
     return (
