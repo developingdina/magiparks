@@ -29,7 +29,7 @@ useEffect(()=> {
 
     return (
         <div>
-            <h1>Other National Parks</h1>
+            <h1>"Other" National Parks</h1>
             {parkView === true && <NewPark refresh={() => getParks()}/>}
             <Button onClick={hideParkForm}>Add</Button>
             <ul>

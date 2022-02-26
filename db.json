@@ -14,21 +14,6 @@
       "id": 3,
       "title": "Dagobah National Park",
       "desc": "May the force be with you while you explore this remote world filled with swamps and forests. Once a refuge for Jedi Grand Master Yoda, this national park now serves as a historical site."
-    },
-    {
-      "id": 4,
-      "title": "Tatooine National Park",
-      "desc": ""
-    },
-    {
-      "id": 5,
-      "title": "Mordor Historical Monument",
-      "desc": ""
-    },
-    {
-      "title": " New Park",
-      "desc": "After hiding on national parks list",
-      "id": 6
     }
   ]
 }

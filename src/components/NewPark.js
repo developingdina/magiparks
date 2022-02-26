@@ -27,7 +27,7 @@ function handleSubmit(e){
             desc: desc
         })
     }).then(props.refresh)
-   
+   .then(setTitle(""), setDesc(""))
 
     //add a fetch POST call to send the value to the 
     //db

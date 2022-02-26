@@ -15,10 +15,6 @@ export default function Navbar(){
                 <Button>About</Button>
             </NavLink>
 
-            <NavLink to="/parks/new">
-                <Button>New Park</Button>
-            </NavLink>
-
             <NavLink to="/">
                 <Button>Exit</Button>
             </NavLink>
