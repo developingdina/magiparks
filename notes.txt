@@ -28,3 +28,22 @@ Parks:
     }
   ]
 }
+
+BLOG:
+
+####Random Trouble Shooting:
+npm start
+After idling my console for awhile my npm start command stopped working.I would get an error that said "react-script not found".
+When I went to my package.json file I saw the following:
+`"scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  }`
+ and when I went to the start file in react-scripts nothing was out of the ordinary. I tried turning the computer on/off again, deleting NPM and NODE then reinstalling them, and even went through Homebrew troubleshooting. Out of frustration I forgot to try reinstalling the package itself. So I `npm install react-scripts` again and afterwards the server kicked up like nothing happened.
+
+I had a similar issue with my json-server package and with the uninstall/install dance underway I got that package working again too.
+
+
+ Somewhere to hold the form state, changing data that we are entering into the form, so that we can manipulate that data later and add the park to the list.
