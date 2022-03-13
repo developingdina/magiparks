@@ -1,4 +1,4 @@
-https://img.shields.io/github/license/DKendle/magiparks
+[![GitHub license](https://img.shields.io/github/license/DKendle/magiparks)](https://github.com/DKendle/magiparks/blob/main/LICENSE)
 # Magiparks
 
  A simple application that gives users information on "Other" national parks a.k.a
