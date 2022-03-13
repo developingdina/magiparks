@@ -1,21 +1,34 @@
 # Magiparks
 
-Magiparks is an app that acts as a guide to sci-fi and videogame landmarks that have
-come to be well known places for their franchises fans. Imagine if the National Park System
-aquired a way to visit these places and wanted to showcase these amazing places for 
-would be tourists.
+ A simple application that gives users information on "Other" national parks a.k.a
+the sci-fi places many of us grew up with and loved that were adopted into the park
+system.
 
 ## Installation
 
-Use the package manager [pip](https://pip.pypa.io/en/stable/) to install foobar.
+Clone down and open the repository in your ide. Use the package manager [npm](https://www.npmjs.com/) to install all dependencies and needed packages.
 
 ```bash
-pip install foobar
+npm install 
 ```
+To run the application enter in your terminal:
+```
+npm start
+```
+To run the fake Rest api to have json data for the application open a new terminal and enter:
+```
+json-server --watch db.json
+```
+The db.json file is where all the information for the parks will be pulled and where you will manipulate any data if you want to change what is displayed for your use.
+
 
 # Description
 
-Let people know what your project can do specifically. Provide context and add a link to any reference visitors might be unfamiliar with. A list of Features or a Background subsection can also be added here. If there are alternatives to your project, this is a good place to list differentiating factors.
+Magiparks is an app that acts as a guide to sci-fi and videogame landmarks that have
+come to be well known places for their franchises fans. Imagine if the National Park System
+aquired a way to visit these places and wanted to showcase these amazing places for 
+would be tourists. Simple and minimal, this app is the start of a registry for all the 
+magical places that 
 
 # Visuals
 
