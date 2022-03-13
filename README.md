@@ -1,3 +1,4 @@
+https://img.shields.io/github/license/DKendle/magiparks
 # Magiparks
 
  A simple application that gives users information on "Other" national parks a.k.a
