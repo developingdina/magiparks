@@ -1,11 +1,16 @@
-.App {
+html {
   background-color: #282c34;
+
+}
+
+.App {
   text-align: center;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   display: flex;
   flex-direction: column;
   color: white;
   align-items: center;
+  justify-content: center;
 }
 
 .container {
