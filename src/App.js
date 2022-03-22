@@ -20,9 +20,8 @@ function App() {
         <Route path="/parks" element={<ParkList />} />
         <Route path="/about" element={<About />}/>
         <Route path="/home" element={<Home />} />
-        <Route path="/parks/new" element={<NewPark/>}/>
+        <Route path="/parks/new" element={<NewPark />}/>
         <Route exact path="/" element={<Welcome />}/>
-        <Route path='*' element={<ErrorPage />} />
       </Routes>
     </div>
   );
@@ -31,3 +30,5 @@ function App() {
 }
 
 export default App;
+
+//New version of React Router v6, exact/nonexact path

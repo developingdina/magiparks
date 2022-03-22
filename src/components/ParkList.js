@@ -4,10 +4,12 @@ import ListItem from './ListItem'
 import NewPark from './NewPark'
 import Button from './Button'
 
+
 export default function ParkList(props) {
 
 const [card, setCard] = useState([])
 const [parkView, setParkView] = useState(false)
+const [input, setInput] = useState(0)
 
 useEffect(()=> {
     getParks()
@@ -27,16 +29,31 @@ useEffect(()=> {
         setParkView(!parkView)
   }
 
+  function inputVal(e){
+      setInput(e.target.value)
+      console.log(input)
+  }
+
+
     return (
+
+
         <div>
+
+
             <h1>"Other" National Parks</h1>
             {parkView === true && <NewPark refresh={() => getParks()}/>}
             <Button onClick={hideParkForm}>Add</Button>
+            <form id="counter-form">
+                <input onChange={inputVal} value={input} type="text" />
+            </form>
             <ul>
                 {card.map((obj) => (
-                    <ListItem key={obj.title} title={obj.title} desc={obj.desc} id={obj.id} refFunction={() => getParks()}/>
+                    <ListItem key={obj.title} input={input} title={obj.title} desc={obj.desc} id={obj.id} refFunction={() => getParks()}/>
                 ))}
             </ul>
         </div>
     )
 }
+
+//props are read only

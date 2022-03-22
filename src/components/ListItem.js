@@ -1,8 +1,10 @@
 import React from 'react'
 import Button from './Button'
-export default function ListItem({title, desc, id, refFunction}) {
+import {useState} from 'react'
 
+export default function ListItem({input, title, desc, id, refFunction}) {
 
+const [buttonCount, setButtonCount] = useState(0)
 
  function deletePark(id){
     fetch(`http://localhost:3000/parks/${id}`, {
@@ -10,11 +12,15 @@ export default function ListItem({title, desc, id, refFunction}) {
     }).then(refFunction())
  }
  
+ function counter(){
+  setButtonCount(input)
+ }
     return (
         <div style={{border: "2px solid palevioletred", margin: "0 1em", padding: "0.25em 1em"}} >
             <h3 >{title}</h3>
             <p>{desc}</p>
             <Button onClick={() => deletePark(id)}>Remove</Button>
+            <button onClick={counter}>{buttonCount}</button>
         </div>
     )
 }
@@ -36,3 +42,8 @@ export default function ListItem({title, desc, id, refFunction}) {
 
 //the above will delete the items, but you will need
 //to refresh to show the result
+//-----------------------------------
+// Each list item has counter
+//counter default 0
+//Input field at top park list def=1
+//input tied to specific component counter
