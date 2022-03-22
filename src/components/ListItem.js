@@ -16,7 +16,7 @@ const [buttonCount, setButtonCount] = useState(0)
   setButtonCount(input)
  }
     return (
-        <div style={{border: "2px solid palevioletred", margin: "0 1em", padding: "0.25em 1em"}} >
+        <div className="container" >
             <h3 >{title}</h3>
             <p>{desc}</p>
             <Button onClick={() => deletePark(id)}>Remove</Button>
