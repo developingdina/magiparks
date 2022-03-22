@@ -38,7 +38,7 @@ useEffect(()=> {
     return (
 
 
-        <div>
+        <div className="container">
 
 
             <h1>"Other" National Parks</h1>
@@ -47,7 +47,7 @@ useEffect(()=> {
             <form id="counter-form">
                 <input onChange={inputVal} value={input} type="text" />
             </form>
-            <ul>
+            <ul className="ul">
                 {card.map((obj) => (
                     <ListItem key={obj.title} input={input} title={obj.title} desc={obj.desc} id={obj.id} refFunction={() => getParks()}/>
                 ))}
