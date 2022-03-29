@@ -21,6 +21,11 @@
       "id": 5,
       "title": "Mordor Historical Monument",
       "desc": ""
+    },
+    {
+      "id":6,
+      "title": "The Void",
+      "desc": "An abysmall darkness that cannot sustain life...until now!"
     }
   ]
 }
