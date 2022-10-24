@@ -1,34 +1,34 @@
-import './App.css';
-import Home from './components/Home';
-import ParkList from './components/ParkList';
-import Navbar from './components/Navbar';
-import { Routes, Route} from 'react-router-dom';
-import Welcome from './components/Welcome';
-import { About } from './components/About';
-import NewPark from './components/NewPark';
+import React, { useEffect, useState } from 'react';
+import ParkCard from './components/ParkCard'
+import { Grid } from '@mui/material';
 
-function App() {
+
+export default function App() {
+
+    const [parkInfo, setParkInfo] = useState([])
+
+    useEffect(() => {
+      fetch("http://localhost:3000/parks")
+      .then((resp => resp.json()))
+      .then((data) => setParkInfo(data))
+    },[])
+
 
 
   return (
     <div className="App">
-      <header>
-        <Navbar />
-      </header>
+      <Grid container spacing={2} direction="row" justifyContent="center" alignItems="center">
+      <ParkCard />
+      <ParkCard />
+      <ParkCard />
+      <ParkCard />
+      <ParkCard />
+      <ParkCard />
 
-      <Routes>
-        <Route path="/parks" element={<ParkList />} />
-        <Route path="/about" element={<About />}/>
-        <Route path="/home" element={<Home />} />
-        <Route path="/parks/new" element={<NewPark />}/>
-        <Route exact path="/" element={<Welcome />}/>
-      </Routes>
+
+      </Grid>
     </div>
   );
 
  
 }
-
-export default App;
-
-//New version of React Router v6, exact/nonexact path

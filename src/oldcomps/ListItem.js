@@ -1,5 +1,5 @@
 import React from 'react'
-import Button from './Button'
+import Button from './oldcomps/Button'
 import {useState} from 'react'
 
 export default function ListItem({input, title, desc, id, refFunction}) {

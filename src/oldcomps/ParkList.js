@@ -1,8 +1,8 @@
 import React from 'react'
 import { useState, useEffect } from 'react'
-import ListItem from './ListItem'
-import NewPark from './NewPark'
-import Button from './Button'
+//import ListItem from './ListItem'
+//import NewPark from './NewPark'
+//import Button from './oldcomps/Button'
 
 
 export default function ParkList(props) {
@@ -11,6 +11,7 @@ const [card, setCard] = useState([])
 const [parkView, setParkView] = useState(false)
 const [input, setInput] = useState(0)
 
+//Hook gr
 useEffect(()=> {
     getParks()
   }, [])
@@ -39,8 +40,6 @@ useEffect(()=> {
 
 
         <div className="container">
-
-
             <h1>"Other" National Parks</h1>
             {parkView === true && <NewPark refresh={() => getParks()}/>}
             <Button onClick={hideParkForm}>Add</Button>
